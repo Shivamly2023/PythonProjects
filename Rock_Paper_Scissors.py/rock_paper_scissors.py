@@ -4,7 +4,9 @@ choices = ["rock",  "paper", "scissor"]
 
 computer = random.choice(choices)
 
-user = input("Computer chose:", computer)
+user = input("Enter rock, paper, or scissors: ").lower()
+
+print("Computer chose:", computer)
 
 if user == computer:
     print("it's a tie!")
